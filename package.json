@@ -1,0 +1,34 @@
+{
+  "name": "boilerplate-react-mono",
+  "private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": "^18"
+  },
+  "scripts": {
+    "dev": "concurrently \"pnpm run serverdev\" \"pnpm run clientdev\"",
+    "build": "pnpm --filter client run build",
+    "clientdev": "pnpm --filter client run dev",
+    "serverdev": "pnpm --filter server run dev",
+    "serverprod": "pnpm --filter server run prod",
+    "testclient": "pnpm --filter client run test",
+    "testserver": "pnpm --filter server run test",
+    "lint": "eslint",
+    "coverage": "vitest run --coverage",
+    "snyk": "snyk test --all-projects"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "@babel/preset-react": "7.18.6",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "vite-plugin-terminal": "^1.0.2",
+    "vitest": "^0.25.6"
+  }
+}
