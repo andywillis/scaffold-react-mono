@@ -1,4 +1,4 @@
-# nearform-react-mono
+# scaffold-react-mono
 
 ## Licence
 
