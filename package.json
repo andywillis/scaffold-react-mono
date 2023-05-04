@@ -1,11 +1,14 @@
 {
   "name": "boilerplate-react-mono",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
+  "license": "CC-BY-NC-SA-4.0",
+  "author": "Andy Willis",
   "engines": {
     "node": "^18"
   },
   "scripts": {
+    "sc": "cspell --config cspell.config.js",
     "dev": "concurrently \"pnpm run serverdev\" \"pnpm run clientdev\"",
     "build": "pnpm --filter client run build",
     "clientdev": "pnpm --filter client run dev",
@@ -18,17 +21,17 @@
     "snyk": "snyk test --all-projects"
   },
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^8.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
-    "@babel/eslint-parser": "^7.19.1",
+    "@babel/core": "^7.21.8",
+    "@babel/eslint-parser": "^7.21.8",
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "@babel/preset-react": "7.18.6",
-    "eslint": "^8.29.0",
+    "eslint": "^8.39.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "vite-plugin-terminal": "^1.0.2",
-    "vitest": "^0.25.6"
+    "eslint-plugin-import": "^2.27.5",
+    "vite-plugin-terminal": "^1.1.0",
+    "vitest": "^0.31.0"
   }
 }

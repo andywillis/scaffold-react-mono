@@ -36,11 +36,7 @@
     // Fix class for preact
     "react/no-unknown-property": ["error", { "ignore": [ "class" ]}],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": [
-      "warn", {
-        "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
-      }
-    ],
+    "react-hooks/exhaustive-deps": "error",
     "react/jsx-props-no-spreading": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
